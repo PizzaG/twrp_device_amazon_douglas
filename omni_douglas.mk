@@ -40,3 +40,8 @@ PRODUCT_BRAND := amazon
 PRODUCT_MODEL := Kindle fire 8
 PRODUCT_MANUFACTURER := amazon
 PRODUCT_RELEASE_NAME := Kindle fire 8
+
+# ADB Fix
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.usb.ffs.aio_compat=true \
+    ro.vendor.build.security_patch=2099-12-31
